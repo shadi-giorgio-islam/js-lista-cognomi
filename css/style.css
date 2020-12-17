@@ -3,3 +3,32 @@
   padding: 0;
   box-sizing: border-box;
 }
+body{
+  background-color: rgb(126, 0, 177);
+  font-family: 'Roboto', sans-serif;
+}
+
+.container{
+  background-color: white;
+  max-width: 700px;
+  margin: 200px auto;
+  text-align: center;
+}
+
+h1{
+  text-transform: uppercase;
+  font-size: 50px;
+  padding: 20px;
+}
+
+.cognomi{
+  width: 30%;
+  margin: auto;
+  text-align: left;
+}
+
+p{
+  font-size: 30px;
+  font-weight: 700;
+  padding: 20px;
+}
