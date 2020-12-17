@@ -1,7 +1,13 @@
+// dichiarazione variabili
 var cognomi = ['Bianchi', 'Rossi', 'Duzioni', 'Balsano', 'Verdi'];
-cognomi.push(prompt('inserisci cognome'));
-console.log(cognomi);
+var cognomeInserito = prompt('inserisci cognome');
+// maiuscolo prima lettera
+cognomeInserito = cognomeInserito.charAt(0).toUpperCase() + cognomeInserito.slice(1)
+cognomi.push(cognomeInserito);
+// metto in ordine alfabetico
+cognomi.sort();
+
 
 for (var i = 0; i < cognomi.length; i++) {
-  document.getElementById('cognome').innerHTML += i + 1 + '.' + cognomi[i] + "<br>";
+    document.getElementById('cognome').innerHTML += i + 1 + '.' + cognomi[i] + "<br>";
 }
